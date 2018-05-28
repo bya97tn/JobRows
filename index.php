@@ -1,6 +1,6 @@
 <?php
   session_start();
-  $link = mysqli_connect("localhost", "root", "", "jobrows");
+  $link = mysqli_connect("localhost", "id5480032_jobrows", "jobrows", "id5480032_jobrows");
             if (!$link) {
                 echo "Error: Unable to connect to MySQL." . PHP_EOL;
                 echo "Debugging errno: " . mysqli_connect_errno() . PHP_EOL;
@@ -152,36 +152,6 @@
       <!-- /.row -->
 
       <!-- Portfolio Section -->
-      <h2>Latest Offers</h2>
-      <div class="row">
-        <?php
-        $res3=mysqli_query($link,"SELECT* FROM offer WHERE open=1 ORDER BY date_time DESC");
-        $i=0;
-        while($row3=mysqli_fetch_array($res3) and $i<3)
-        {
-        $id=$row3['id'];
-        $title=$row3['title'];
-        $des=$row3['des'];
-        $i++;
-        ?>
-        <div class="col-lg-4 mb-4">
-          <div class="card h-100">
-            <h4 class="card-header"><?php echo $title; ?></h4>
-            <div class="card-body">
-              <p class="card-text"><?php echo $des; ?></p>
-            </div>
-            <div class="card-footer">
-              <a href="offerpage.php?offer=<?php echo $id; ?>" class="btn btn-primary">Learn More</a>
-            </div>
-          </div>
-        </div>
-        <?php
-        }
-        ?>
-      </div>
-      <!-- /.row -->
-
-      <!-- Portfolio Section -->
       <h2>Latest Demands</h2>
       <div class="row">
         <?php
@@ -201,7 +171,7 @@
               <p class="card-text"><?php echo $des; ?></p>
             </div>
             <div class="card-footer">
-              <a href="demandpage.php?offer=<?php echo $id; ?>" class="btn btn-primary">Learn More</a>
+              <a href="demandpage.php?demand=<?php echo $id; ?>" class="btn btn-primary">Learn More</a>
             </div>
           </div>
         </div>
