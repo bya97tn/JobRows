@@ -1,6 +1,6 @@
 <?php
   session_start();
-  $link = mysqli_connect("localhost", "root", "", "jobrows");
+  $link = mysqli_connect("localhost", "id5480032_jobrows", "jobrows", "id5480032_jobrows");
             if (!$link) {
                 echo "Error: Unable to connect to MySQL." . PHP_EOL;
                 echo "Debugging errno: " . mysqli_connect_errno() . PHP_EOL;
@@ -120,8 +120,8 @@
       <div class="form-group">
         <label class="col-md-4 control-label" for="governorate"></label>
         <div class="col-md-4">
-          <select id="governorate" name="governorate" class="form-control" required="">
-            <option>Choose a governorate</option>
+          <select id="governorate" name="governorate" class="form-control" required>
+            <option value="">Choose a governorate</option>
             <?php
               $res5=mysqli_query($link,"SELECT* FROM governorate;");
 
@@ -190,8 +190,8 @@
             <?php
             $cat=$_POST['category'];
             $gov=$_POST['governorate'];
-            $type=demand;
-            $res3=mysqli_query($link,"SELECT* FROM $type WHERE category=$cat AND id_governorate=$gov ORDER BY date_time DESC");
+            $type="demand";
+            $res3=mysqli_query($link,"SELECT* FROM $type WHERE category=$cat AND id_governorate=$gov ORDER BY date_time DESC") or die(mysqli_error($link));
 
             while($row3=mysqli_fetch_array($res3))
             { 
