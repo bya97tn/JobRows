@@ -1,6 +1,6 @@
 <?php
   session_start();
-  $link = mysqli_connect("localhost", "root", "", "jobrows");
+  $link = mysqli_connect("localhost", "id5480032_jobrows", "jobrows", "id5480032_jobrows");
             if (!$link) {
                 echo "Error: Unable to connect to MySQL." . PHP_EOL;
                 echo "Debugging errno: " . mysqli_connect_errno() . PHP_EOL;
@@ -99,9 +99,9 @@
         </div>
         <div class="col-lg-6">
           <h2>About JobRows Platform</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed voluptate nihil eum consectetur similique? Consectetur, quod, incidunt, harum nisi dolores delectus reprehenderit voluptatem perferendis dicta dolorem non blanditiis ex fugiat.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, magni, aperiam vitae illum voluptatum aut sequi impedit non velit ab ea pariatur sint quidem corporis eveniet. Odit, temporibus reprehenderit dolorum!</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, consequuntur, modi mollitia corporis ipsa voluptate corrupti eum ratione ex ea praesentium quibusdam? Aut, in eum facere corrupti necessitatibus perspiciatis quis?</p>
+          <p>It is an online platform that reunites three trending concepts in the world; crowd funding, shared economy and freelancing. This will be done by creating temporary jobs for university students who have skills they want to develop and exploit.</p>
+          <p>JobRows also works closely with, and helps shape the major systems that impact university students. It also works on covering diverse areas as handcraft jobs, education, babysitting and homemade food etc …, through working on several partnerships with new-born startups in order to encourage young people to take entrepreneurial initiatives that our economy severely lacks.</p>
+          <p>The platform consists of an online platform that helps those that need a service or a product for a smaller amount of money, by matching them with appropriate job seeker’s profile.</p>
         </div>
       </div>
       <!-- /.row -->
@@ -112,40 +112,40 @@
       <div class="row">
         <div class="col-lg-4 mb-4">
           <div class="card h-100 text-center">
-            <img class="card-img-top" src="http://placehold.it/750x450" alt="">
+            <img class="card-img-top" src="./images/amine_pic.jpeg" alt="">
+            <div class="card-body">
+              <h4 class="card-title">Amine Saied</h4>
+              <h6 class="card-subtitle mb-2 text-muted">Team Leader</h6>
+              <p class="card-text"></p>
+            </div>
+            <div class="card-footer">
+              <a href="mailto:aminesaied@outlook.com">aminesaied@outlook.com</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-4">
+          <div class="card h-100 text-center">
+            <img class="card-img-top" src="./images/ahmed_pic.png" alt="">
+            <div class="card-body">
+              <h4 class="card-title">Ahmed Ben Yaghlen</h4>
+              <h6 class="card-subtitle mb-2 text-muted">Project Manager</h6>
+              <p class="card-text"></p>
+            </div>
+            <div class="card-footer">
+              <a href="mailto:benyaghlen.ahmed@tbs.u-tunis.tn">benyaghlen.ahmed@tbs.u-tunis.tn</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-4">
+          <div class="card h-100 text-center">
+            <img class="card-img-top" src="./images/khalil_pic.png" alt="">
             <div class="card-body">
               <h4 class="card-title">Khalil Rekik</h4>
-              <h6 class="card-subtitle mb-2 text-muted">Platform Manager</h6>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus aut mollitia eum ipsum fugiat odio officiis odit.</p>
+              <h6 class="card-subtitle mb-2 text-muted">Product Manager</h6>
+              <p class="card-text"></p>
             </div>
             <div class="card-footer">
               <a href="mailto:khalil.rekik101@gmail.com">khalil.rekik101@gmail.com</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 mb-4">
-          <div class="card h-100 text-center">
-            <img class="card-img-top" src="http://placehold.it/750x450" alt="">
-            <div class="card-body">
-              <h4 class="card-title">Team Member</h4>
-              <h6 class="card-subtitle mb-2 text-muted">Position</h6>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus aut mollitia eum ipsum fugiat odio officiis odit.</p>
-            </div>
-            <div class="card-footer">
-              <a href="#">name@example.com</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 mb-4">
-          <div class="card h-100 text-center">
-            <img class="card-img-top" src="http://placehold.it/750x450" alt="">
-            <div class="card-body">
-              <h4 class="card-title">Team Member</h4>
-              <h6 class="card-subtitle mb-2 text-muted">Position</h6>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus aut mollitia eum ipsum fugiat odio officiis odit.</p>
-            </div>
-            <div class="card-footer">
-              <a href="#">name@example.com</a>
             </div>
           </div>
         </div>
