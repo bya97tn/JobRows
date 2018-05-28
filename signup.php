@@ -4,7 +4,7 @@
   {
     header('Location: index.php');
   }
-  $link = mysqli_connect("localhost", "root", "", "jobrows");
+  $link = mysqli_connect("localhost", "id5480032_jobrows", "jobrows", "id5480032_jobrows");
             if (!$link) {
                 echo "Error: Unable to connect to MySQL." . PHP_EOL;
                 echo "Debugging errno: " . mysqli_connect_errno() . PHP_EOL;
